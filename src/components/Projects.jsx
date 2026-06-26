@@ -9,7 +9,7 @@ const Projects = () => {
       description: 'This research was part of our machine learning course. Here we tried to solved the class imbalance problem of this dataset using SMOTE-Tomek algorithm. We also used 10 different algorithms from 5 different algorithm families to figure out which works better for Intrusion detection systems using 14 different metrices',
       techStack: ['Python', 'Scikit-learn'],
       github: '#',
-      external: '#'
+      external: 'https://docs.google.com/document/d/16_FD6TbmmGzZF5H0nPtjDb2hE48pmx-B/edit?usp=sharing&ouid=117247079500673675144&rtpof=true&sd=true'
     },
     {
       title: 'Nest Quest',
