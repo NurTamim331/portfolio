@@ -1,18 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply bg-background text-text font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    @apply bg-background text-text font-sans antialiased selection:bg-cyan-500/25 selection:text-cyan-200;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080d1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
   }
 }
 
 @layer utilities {
   .glass-panel {
-    @apply bg-surface/60 backdrop-blur-md border border-white/10 shadow-xl;
+    @apply bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 shadow-2xl;
+  }
+  .glass-panel-hover {
+    @apply transition-all duration-300 hover:border-cyan-500/40 hover:bg-slate-900/80 hover:shadow-glow-cyan;
   }
 }

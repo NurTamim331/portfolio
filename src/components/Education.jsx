@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap } from 'lucide-react';
 
@@ -7,35 +6,35 @@ const Education = () => {
     {
       degree: 'B.Sc. in Computer Science and Engineering (BSCSE)',
       institution: 'United International University',
-      year: '2023 - 2027',
+      year: '2023 - 2027 (Expected)',
       gpa: 'CGPA: 3.98',
-      details: 'Relevant Coursework: Data Structures, Algorithms, Database Management, Web Engineering, system design, machine learning and artificial intelligence'
+      details: 'Key Focus: Vehicular Edge Computing, Machine Learning, Data Structures & Algorithms, Database Systems, Web Engineering, and System Design.'
     },
     {
       degree: 'Higher Secondary Certificate (HSC)',
-      institution: 'Govt Science College, Tejgaon Dhaka',
+      institution: 'Govt Science College, Tejgaon, Dhaka',
       year: '2021',
-      gpa: 'Gpa: 5.00',
-      details: 'Science Group.'
+      gpa: 'GPA: 5.00 / 5.00',
+      details: 'Science concentration with high distinction.'
     },
     {
       degree: 'Secondary School Certificate (SSC)',
-      institution: 'Ideal School and College',
+      institution: 'Ideal School and College, Motijheel, Dhaka',
       year: '2018',
-      gpa: 'Gpa: 5.00',
-      details: 'Science Group.'
+      gpa: 'GPA: 5.00 / 5.00',
+      details: 'Science concentration with outstanding academic standing.'
     },
     {
       degree: 'Junior School Certificate (JSC)',
       institution: 'Motijheel Model High School and College',
       year: '2016',
-      gpa: 'Gpa : 5.00',
-      details: 'General curriculum.'
+      gpa: 'GPA: 5.00 / 5.00',
+      details: 'General secondary curriculum.'
     }
   ];
 
   return (
-    <section id="education" className="py-20 px-6 md:px-12 max-w-4xl mx-auto">
+    <section id="education" className="py-24 px-6 md:px-12 max-w-5xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,38 +42,42 @@ const Education = () => {
         transition={{ duration: 0.6 }}
       >
         <div className="flex items-center mb-12">
-          <h2 className="text-3xl font-bold text-text">Education</h2>
-          <div className="h-[1px] bg-muted/30 flex-grow ml-6"></div>
+          <h2 className="text-3xl md:text-4xl font-bold text-text">Education</h2>
+          <div className="h-[1px] bg-slate-800 flex-grow ml-6"></div>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {educationList.map((edu, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass-panel p-6 rounded-xl relative overflow-hidden group"
+              className="glass-panel p-6 sm:p-7 rounded-2xl relative overflow-hidden group border border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300"
             >
-              <div className="absolute top-0 left-0 w-2 h-full bg-primary transform origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-in-out"></div>
-              
-              <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between mb-4">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-surface rounded-lg text-primary">
-                    <GraduationCap size={24} />
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
+                <div className="flex items-start sm:items-center gap-4">
+                  <div className="p-3 bg-cyan-950/40 text-cyan-400 border border-cyan-800/40 rounded-xl">
+                    <GraduationCap size={22} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-text">{edu.degree}</h3>
-                    <p className="text-primary font-medium">{edu.institution}</p>
+                    <h3 className="text-lg md:text-xl font-bold text-text group-hover:text-primary transition-colors">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-cyan-400/90 font-medium text-sm">{edu.institution}</p>
                   </div>
                 </div>
-                <div className="text-left md:text-right">
-                  <span className="inline-block px-3 py-1 bg-surface text-muted text-sm rounded-full font-mono mb-1">{edu.year}</span>
-                  <p className="text-sm font-semibold text-text">{edu.gpa}</p>
+                <div className="flex sm:flex-col items-center sm:items-end justify-between sm:justify-start gap-2">
+                  <span className="px-3 py-1 bg-slate-800/70 border border-slate-700/60 text-slate-300 text-xs rounded-full font-mono">
+                    {edu.year}
+                  </span>
+                  <span className="text-sm font-semibold text-emerald-400 font-mono">
+                    {edu.gpa}
+                  </span>
                 </div>
               </div>
-              <p className="text-muted ml-16">{edu.details}</p>
+              <p className="text-muted text-sm sm:pl-14 leading-relaxed">{edu.details}</p>
             </motion.div>
           ))}
         </div>

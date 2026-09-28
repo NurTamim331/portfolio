@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,12 +9,14 @@ import Achievements from './components/Achievements';
 import References from './components/References';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 function App() {
   return (
-    <div className="bg-background min-h-screen text-text font-sans selection:bg-primary selection:text-background">
+    <div className="bg-background min-h-screen text-text font-sans relative selection:bg-primary/20 selection:text-primary">
+      <BackgroundAnimation />
       <Navbar />
-      <main className="flex flex-col w-full overflow-hidden">
+      <main className="flex flex-col w-full relative z-10">
         <Hero />
         <About />
         <Experience />

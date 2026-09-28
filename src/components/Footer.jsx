@@ -1,41 +1,39 @@
-import React from 'react';
-import { Code2, Briefcase, Code, GitBranch } from 'lucide-react'; // Using Code as fallback for Codeforces
-
+import { Briefcase, Code, GitBranch } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-8 text-center flex flex-col items-center">
+    <footer className="py-12 text-center flex flex-col items-center border-t border-slate-800/60 relative z-10">
       <div className="flex gap-6 mb-6">
         <a
-          href="https://github.com/NurTamim331" // GitHub Link
+          href="https://github.com/NurTamim331"
           target="_blank"
           rel="noreferrer"
-          className="text-muted hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
+          className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-muted hover:text-primary hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
           aria-label="GitHub"
         >
-          <GitBranch />
+          <GitBranch size={20} />
         </a>
         <a
-          href="https://www.linkedin.com/in/md-nur-uddin-tamim-b2839729a/" // LinkedIn Link
+          href="https://www.linkedin.com/in/md-nur-uddin-tamim-b2839729a/"
           target="_blank"
           rel="noreferrer"
-          className="text-muted hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
+          className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-muted hover:text-primary hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
           aria-label="LinkedIn"
         >
-          <Briefcase size={24} />
+          <Briefcase size={20} />
         </a>
         <a
-          href="https://codeforces.com/profile/CyberNUT" // Codeforces Link
+          href="https://codeforces.com/profile/CyberNUT"
           target="_blank"
           rel="noreferrer"
-          className="text-muted hover:text-primary transition-colors hover:-translate-y-1 transform duration-300"
+          className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-muted hover:text-primary hover:border-cyan-500/40 hover:-translate-y-1 transition-all duration-300 shadow-sm"
           aria-label="Codeforces"
         >
-          <Code size={24} />
+          <Code size={20} />
         </a>
       </div>
-      <p className="text-sm font-mono text-muted">
-        Designed & Built by <span className="text-primary">Nur Uddin Tamim</span>
+      <p className="text-xs font-mono text-muted">
+        Designed & Built by <span className="text-primary font-medium">Nur Uddin Tamim</span> • © {new Date().getFullYear()}
       </p>
     </footer>
   );
