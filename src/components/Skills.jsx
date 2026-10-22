@@ -11,12 +11,12 @@ const Skills = () => {
     {
       title: "Frameworks & Libraries",
       icon: Layout,
-      skills: ["Next.js", "React", "Node.js", "Express", "Tailwind CSS", "Scikit-Learn"]
+      skills: ["React 19", "Next.js", "Node.js", "Express", "Tailwind CSS", "Leaflet.js", "Transformers.js", "Scikit-Learn"]
     },
     {
-      title: "Databases, Protocols & Tools",
+      title: "Databases, Cloud & Systems",
       icon: Database,
-      skills: ["Supabase", "PostgreSQL", "MongoDB", "MySQL", "Git & GitHub", "VEC / Edge Systems", "REST APIs", "WebSockets"]
+      skills: ["TiDB Cloud", "MySQL", "Supabase", "PostgreSQL", "MongoDB", "Socket.IO / WebSockets", "Google Gemini API", "Git & GitHub", "REST APIs"]
     },
     {
       title: "Languages & Communication",
