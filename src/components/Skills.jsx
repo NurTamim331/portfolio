@@ -6,17 +6,17 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: Code2,
-      skills: ["Python", "C", "C++", "Java", "JavaScript", "PHP", "Shell Scripting"]
+      skills: ["Python", "JavaScript", "TypeScript", "C", "C++", "Java", "PHP", "Shell Scripting"]
     },
     {
       title: "Frameworks & Libraries",
       icon: Layout,
-      skills: ["React", "Node.js", "Express", "Tailwind CSS", "Scikit-Learn"]
+      skills: ["Next.js", "React", "Node.js", "Express", "Tailwind CSS", "Scikit-Learn"]
     },
     {
       title: "Databases, Protocols & Tools",
       icon: Database,
-      skills: ["MongoDB", "MySQL", "Git & GitHub", "VEC / Edge Systems", "REST APIs", "WebSockets"]
+      skills: ["Supabase", "PostgreSQL", "MongoDB", "MySQL", "Git & GitHub", "VEC / Edge Systems", "REST APIs", "WebSockets"]
     },
     {
       title: "Languages & Communication",

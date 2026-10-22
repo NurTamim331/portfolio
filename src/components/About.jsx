@@ -33,7 +33,7 @@ const About = () => {
               Over the course of my academic journey, I have built a solid foundation in core computer science disciplines, distributed architectures, and competitive programming. I enjoy building robust, secure digital systems and investigating real-world engineering bottlenecks—from optimizing task scheduling across smart vehicle networks to architecting modern web platforms.
             </p>
             <p>
-              I work proficiently with technologies like Python, JavaScript, React, Node.js, PHP, MySQL, and MongoDB, always seeking opportunities to learn, engineer, and create tangible impact.
+              I work proficiently with technologies like Next.js, TypeScript, React, Python, Node.js, Supabase, MySQL, and MongoDB, always seeking opportunities to learn, engineer, and create tangible impact.
             </p>
           </div>
 

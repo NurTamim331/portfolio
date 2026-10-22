@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Code2, FolderGit2, Cpu, Globe, Sparkles, ShieldCheck, Layers, Radio } from 'lucide-react';
+import { ExternalLink, Code2, FolderGit2, Cpu, Globe, Sparkles, ShieldCheck, Layers, Radio, Plane } from 'lucide-react';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -24,6 +24,25 @@ const Projects = () => {
       github: null,
       external: null,
       status: 'Ongoing Research'
+    },
+    {
+      id: 'geotrips',
+      title: 'GEO Trips – Travel Agency Platform & Back-Office CRM',
+      category: 'Software',
+      badge: 'Featured Full-Stack',
+      badgeColor: 'border-sky-500/40 bg-sky-500/10 text-sky-300',
+      icon: Plane,
+      featured: true,
+      description: 'GEO Trips is a full-stack travel agency platform and back-office management system built with Next.js 15, TypeScript, and Supabase. The public portal features an interactive trip planner, dynamic visa document guides, and a self-service client dashboard for tracking bookings and payments. Behind the scenes, a secure admin CRM automates agency operations—replacing manual spreadsheets with centralized lead pipelines, serialized invoice generation, vendor cost tracking, and real-time profit analytics.',
+      highlights: [
+        'Interactive trip planner, dynamic visa document guides & client dashboard',
+        'Secure admin CRM with centralized lead pipelines & serialized invoice generation',
+        'Vendor cost tracking and real-time profit analytics replacing spreadsheets'
+      ],
+      techStack: ['Next.js 15', 'TypeScript', 'Supabase', 'React', 'Tailwind CSS', 'PostgreSQL'],
+      github: 'https://github.com/NurTamim331/geo_portfolio',
+      external: 'https://geotrips.netlify.app/',
+      status: 'Live Demo'
     },
     {
       id: 'lagatour',
